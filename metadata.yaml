@@ -1,8 +1,7 @@
 name: astrbot_plugin_52poke
 display_name: 神奇宝贝百科按需检索
 desc: 按知识时效和问题类型调用 MediaWiki API 检索神奇宝贝百科。
-version: 1.0.14
+version: 1.0.0
 author: Bot Harbor
-repo: https://github.com/ookkssiirr/astrbot_plugin_52poke
 astrbot_version: ">=4.5.1"
 # 建立 GitHub 仓库后，补充 repo 字段并填写该插件的真实 HTTPS 仓库地址。

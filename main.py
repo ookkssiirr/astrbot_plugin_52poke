@@ -13,7 +13,7 @@ from astrbot.api.event import AstrMessageEvent, filter
 
 API_URL = "https://wiki.52poke.com/api.php"
 BASE_URL = "https://wiki.52poke.com/wiki/"
-USER_AGENT = "BotHarbor52PokeLookup/1.0 (AstrBot personal non-commercial bot)"
+USER_AGENT = "BotHarbor52PokeLookup/1.0.0 (AstrBot personal non-commercial bot)"
 MAX_RESULTS = 1
 MAX_SEARCH_CANDIDATES = 5
 DEFAULT_MAX_EXCERPT_CHARS = 220
@@ -323,7 +323,7 @@ def _search_and_fetch(query, search_term=None, config=None):
     "astrbot_plugin_52poke",
     "Bot Harbor",
     "按需检索神奇宝贝百科 MediaWiki API",
-    "1.0.14",
+    "1.0.0",
 )
 class Main(star.Star):
     def __init__(self, context, config=None):
