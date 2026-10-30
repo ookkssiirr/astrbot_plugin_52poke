@@ -1,0 +1,39 @@
+{
+  "search_provider_id": {
+    "type": "string",
+    "description": "百科检索模型",
+    "_special": "select_provider",
+    "default": "",
+    "hint": "可选：用于将问题整理为百科检索词的模型。留空时沿用原有规则，不额外调用模型。"
+  },
+  "proxy": {
+    "type": "string",
+    "description": "网络代理",
+    "default": "",
+    "hint": "可选：HTTP/HTTPS 代理地址，例如 http://127.0.0.1:7890。留空则直接连接。"
+  },
+  "request_timeout": {
+    "type": "int",
+    "description": "请求超时（秒）",
+    "default": 10,
+    "hint": "访问 52poke 百科 API 的超时时间（秒），默认 10 秒（建议 5~30）。"
+  },
+  "max_excerpt_chars": {
+    "type": "int",
+    "description": "摘录字数上限",
+    "default": 220,
+    "hint": "单次返回给大模型参考的摘录最大字数，默认 220 字（推荐 150~600）。"
+  },
+  "append_source_url": {
+    "type": "bool",
+    "description": "附带原文链接",
+    "default": true,
+    "hint": "是否在给大模型的资料中附带 52poke 词条原文链接，默认开启。"
+  },
+  "min_request_interval": {
+    "type": "float",
+    "description": "请求防频控间隔（秒）",
+    "default": 0.65,
+    "hint": "连续请求从上一次请求完成后开始计时，默认 0.65 秒；配置低于 0.65 秒时按 0.65 秒执行。可设置更长间隔，使用前请核对站方最新守则及 robots.txt。"
+  }
+}
