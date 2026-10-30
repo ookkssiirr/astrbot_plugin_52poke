@@ -323,7 +323,7 @@ def _search_and_fetch(query, search_term=None, config=None):
     "astrbot_plugin_52poke",
     "Bot Harbor",
     "按需检索神奇宝贝百科 MediaWiki API",
-    "1.0.13",
+    "1.0.14",
 )
 class Main(star.Star):
     def __init__(self, context, config=None):
